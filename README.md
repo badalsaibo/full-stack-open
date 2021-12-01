@@ -16,4 +16,4 @@ Exercises for the [full stack open course](https://fullstackopen.com/en) offered
 
 * [Part 6](./part6) (Redux)
 
-* [Part 7](./part7) (Redux)
+* [Part 7](./part7) (React router, custom hooks, styling app with CSS and webpack)
