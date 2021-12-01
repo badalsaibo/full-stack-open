@@ -15,3 +15,5 @@ Exercises for the [full stack open course](https://fullstackopen.com/en) offered
 * [Part 5](./part5) (Testing React apps)
 
 * [Part 6](./part6) (Redux)
+
+* [Part 7](./part7) (Redux)
