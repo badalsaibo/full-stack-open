@@ -21,6 +21,9 @@ const Authors = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     editAuthorBirthYear({ variables: { name: e.target.name.value, setBornTo: Number(e.target.birthYear.value) } });
+
+    e.target.name.value = '';
+    e.target.birthYear.value = '';
   };
 
   return (
@@ -49,7 +52,14 @@ const Authors = (props) => {
         <form onSubmit={handleSubmit}>
           <label htmlFor="authorName">
             Name:
-            <input name="name" type="text" id="authorName" />
+            <select name="name">
+              <option selected disabled>
+                Select Name
+              </option>
+              {authors.map((author) => (
+                <option key={author.name}>{author.name}</option>
+              ))}
+            </select>
           </label>
           <br />
           <label htmlFor="birthYear">
