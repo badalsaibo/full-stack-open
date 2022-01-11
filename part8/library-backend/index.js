@@ -32,6 +32,9 @@ const typeDefs = gql`
 `;
 
 const resolvers = {
+  Author: {
+    bookCount: (root) => books.filter((book) => book.author === root.name).length,
+  },
   Query: {
     bookCount: () => books.length,
     authorCount: () => authors.length,
