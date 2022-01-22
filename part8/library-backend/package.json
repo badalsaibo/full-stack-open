@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "apollo-server": "^3.5.0",
-    "nanoid": "^3.1.30"
+    "nanoid": "^3.1.31"
   }
 }
